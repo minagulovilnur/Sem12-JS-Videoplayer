@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playball&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="tv">
+      
+      <div class="par">
+        <h1 class="h1">Listen to the beautiful recitation of the Quran</h1>
+      </div>
+      <div class="player">
+        <video src="video/recitationofquran1.mp4" id="video-tv"></video>
+      </div>
+
+      <div class="buttons">
+        <img class="play" src="./video/play.png" width="50" />
+        <img class="pause" src="./video/pause.png" width="50" />
+        <img class="stop" src="./video/stop-button.png" width="50" />
+        <img class="backward" src="./video/fast-backward.png" width="50" />
+        <img class="forward" src="./video/forward.png" width="50" />
+        <input
+          type="range"
+          orient="vertical"
+          min="0"
+          max="1"
+          step="0.1"
+          value="1"
+        />
+        <div class="timeVideo">
+          <span class="currentTime"></span>
+          <span class="durationVideo"></span>
+        </div>
+      </div>
+
+      <ul class="video-thumb">
+        <li onclick="changeVideo('video/recitationofquran1.mp4')">
+          <img src="video/cloud.jpg" alt="" />
+        </li>
+        <li onclick="changeVideo('video/recitationofquran2.mp4')">
+          <img src="video/islands.jpg" alt="" />
+        </li>
+        <li onclick="changeVideo('video/recitationofquran3.mp4')">
+          <img src="video/moon.jpg" alt="" />
+        </li>
+        <li onclick="changeVideo('video/recitationofquran4.mp4')">
+          <img src="video/star.jpg" alt="" />
+        </li>
+        <li onclick="changeVideo('video/recitationofquran5.mp4')">
+          <img src="video/cloud.jpg" alt="" />
+        </li>
+      </ul>
+    </section>
+
+    <script src="data.js"></script>
+  </body>
+</html>
